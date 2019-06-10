@@ -1,0 +1,39 @@
+﻿@model Questao2.Domain.Item
+
+@{
+    ViewBag.Title = "Excluir";
+}
+
+<h2>Excluir</h2>
+<div>
+    <h3>Item</h3>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Excluir" class="btn btn-danger" /> |
+            @Html.ActionLink("Voltar", "Index", "", htmlAttributes: new { @class = "btn btn-dark" })
+        </div>
+    }
+</div>

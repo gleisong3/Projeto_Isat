@@ -1,0 +1,81 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.btn-cadastro {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: steelblue;
+    color: steelblue;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-color: #adadad;
+}
+
+    .btn-cadastro:hover {
+        background-color: steelblue;
+        color: white;
+    }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: aliceblue;
+    width: 1336px;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: steelblue;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        li a:hover:not(.active) {
+            background-color: steelblue;
+            color: white;
+        }
